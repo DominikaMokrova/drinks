@@ -81,12 +81,6 @@
         .btn-green:hover {
             background: #1b5e20;
         }
-        .btn-blue {
-            background: #1976D2;
-        }
-        .btn-blue:hover {
-            background: #0D47A1;
-        }
         .footer {
             margin-top: 30px;
             font-size: 12px;
@@ -97,6 +91,45 @@
             color: #aaa;
             margin-top: 5px;
         }
+        .info {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        /* Стили для контактов */
+        .contacts {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        .contacts h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contacts a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #FF8C00;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .contacts a:hover {
+            color: #e67e00;
+            text-decoration: underline;
+        }
+        .contacts .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 8px 0;
+        }
+        .contacts .contact-item span {
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
@@ -105,28 +138,44 @@
         <p class="subtitle">Каталог пива, сидра, кваса и лимонадов</p>
 
         <div class="apps">
-            <!-- ДЕСКТОПНАЯ ВЕРСИЯ (ТОЛЬКО WINDOWS) -->
+            <!-- ДЕСКТОПНАЯ ВЕРСИЯ -->
             <div class="app-card">
                 <h2>💻 Десктопная версия</h2>
                 <p>Для Windows</p>
-                <a href="#" class="btn">⬇️ Скачать для Windows</a>
-                <div class="version">Версия 1.0.0 | 15 МБ</div>
+                <a href="https://dominikamokrova.github.io/drinks/PenieNapitki.zip" class="btn">⬇️ Скачать ZIP-архив</a>
+                <div class="version">Версия 1.0.0 | ~15 МБ</div>
+                <div class="info">📌 Распакуйте архив и запустите EXE</div>
             </div>
 
-            <!-- МОБИЛЬНАЯ ВЕРСИЯ (ТОЛЬКО ANDROID) -->
+            <!-- МОБИЛЬНАЯ ВЕРСИЯ -->
             <div class="app-card">
                 <h2>📱 Мобильная версия</h2>
                 <p>Для Android</p>
-                <a href="#" class="btn btn-green">⬇️ Скачать APK</a>
-                <div class="version">Версия 1.0.0 | 12 МБ</div>
+                <a href="https://dominikamokrova.github.io/drinks/PenieNapitki.apk" class="btn btn-green">⬇️ Скачать APK</a>
+                <div class="version">Версия 1.0.0 | ~12 МБ</div>
+                <div class="info">📌 Разрешите установку из неизвестных источников</div>
             </div>
+        </div>
 
-            <!-- ИНСТРУКЦИЯ ПО УСТАНОВКЕ -->
-            <div class="app-card" style="background: #FFF8E1; border-color: #FF8C00;">
-                <p style="font-size: 14px; margin-bottom: 0;">
-                    📖 <a href="#" style="color: #FF8C00; text-decoration: none; font-weight: bold;">Инструкция по установке</a>
-                </p>
+        <!-- БЛОК С КОНТАКТАМИ -->
+        <div class="contacts">
+            <h3>📬 Свяжитесь со мной</h3>
+            
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:dominikamokr111108@gmail.com">dominikamokr111108@gmail.com</a>
             </div>
+            
+            <div class="contact-item">
+                <span>📱</span>
+                <a href="tel:+79505873491">+7 (950) 587-34-91</a>
+            </div>
+            
+            <div class="contact-item">
+                <span>💬</span>
+                <a href="https://t.me/killpopp" target="_blank">Telegram</a>
+            </div>
+            
         </div>
 
         <div class="footer">
