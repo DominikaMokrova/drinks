@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пенные напитки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #FF8C00;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .apps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .app-card {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 20px;
+            border: 2px solid #eee;
+            transition: 0.3s;
+        }
+        .app-card:hover {
+            border-color: #FF8C00;
+        }
+        .app-card h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .app-card p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #FF8C00;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #e67e00;
+        }
+        .btn-green {
+            background: #2E7D32;
+        }
+        .btn-green:hover {
+            background: #1b5e20;
+        }
+        .btn-blue {
+            background: #1976D2;
+        }
+        .btn-blue:hover {
+            background: #0D47A1;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #aaa;
+        }
+        .version {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍺 Пенные напитки</h1>
+        <p class="subtitle">Каталог пива, сидра, кваса и лимонадов</p>
+
+        <div class="apps">
+            <!-- ДЕСКТОПНАЯ ВЕРСИЯ (ТОЛЬКО WINDOWS) -->
+            <div class="app-card">
+                <h2>💻 Десктопная версия</h2>
+                <p>Для Windows</p>
+                <a href="#" class="btn">⬇️ Скачать для Windows</a>
+                <div class="version">Версия 1.0.0 | 15 МБ</div>
+            </div>
+
+            <!-- МОБИЛЬНАЯ ВЕРСИЯ (ТОЛЬКО ANDROID) -->
+            <div class="app-card">
+                <h2>📱 Мобильная версия</h2>
+                <p>Для Android</p>
+                <a href="#" class="btn btn-green">⬇️ Скачать APK</a>
+                <div class="version">Версия 1.0.0 | 12 МБ</div>
+            </div>
+
+            <!-- ИНСТРУКЦИЯ ПО УСТАНОВКЕ -->
+            <div class="app-card" style="background: #FFF8E1; border-color: #FF8C00;">
+                <p style="font-size: 14px; margin-bottom: 0;">
+                    📖 <a href="#" style="color: #FF8C00; text-decoration: none; font-weight: bold;">Инструкция по установке</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Все приложения бесплатны
+        </div>
+    </div>
+</body>
+</html>
